@@ -1,0 +1,21 @@
+<div>
+  <div class="entry">
+    <span class="title">ResponseStatus</span>
+    <span class="value">{{response?.status}}</span>
+  </div>
+  <div class="entry">
+    <span class="title">Response Message</span>
+    <span class="value">{{response?.message}}</span>
+  </div>
+  <div class="entry">
+    <span class="title">Token</span>
+    <span class="value">{{accessToken$ | async}}</span>
+  </div>
+  <div class="social">
+    <button (click)="authenticate('google')">Google Login</button>
+  </div>
+  <div class="request">
+    <button (click)="insecure()">Unsecure</button>
+    <button (click)="secure()">Secure</button>
+  </div>
+</div>
